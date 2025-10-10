@@ -16,7 +16,7 @@ public class Ujianskripsinested15 {
         int bimbinganP2 = sc.nextInt();
 
         if (bebasKompen.equalsIgnoreCase("Ya")) {
-            // Semua kondisi bimbingan diletakkan di dalam blok ini
+           
             if (bimbinganP1 >= 8 && bimbinganP2 >= 4) {
                 pesan = "Semua syarat terpenuhi. Mahasiswa boleh mendaftar ujian skripsi";
             } else if (bimbinganP1 < 8 && bimbinganP2 < 4) {
