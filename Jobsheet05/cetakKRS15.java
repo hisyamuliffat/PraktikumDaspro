@@ -12,8 +12,8 @@ public class cetakKRS15 {
         if (uktLunas) {
             System.out.println("Pembayaran UKT terferifikasi");
             System.out.println("Silakan cetak KRS dan minta tanda tangan DPA");
-        } else {
+        }else {
             System.out.println("Registrasi ditolak,Silahkan lunasi UKT anda");
-        }
+        } 
     }
 }
