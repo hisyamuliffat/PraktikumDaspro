@@ -1,7 +1,7 @@
 package Jobsheet06;
 import java.util.Scanner;
 
-public class latihan06 {
+public class latihan05 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
