@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class bahanbakar1 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        
 
         double biayasewaMobil = 300.000;
         double biayaSupir = 200.000;
