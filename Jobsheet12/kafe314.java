@@ -26,7 +26,6 @@ public class kafe314 {
         System.out.println("5. roti bakar - Rp 10.000");
         System.out.println("6. mie goreng - Rp 18.000");
         System.out.println("===========================");
-        System.out.println("Silahkan pilih menu yang anda inginkan");
     }
 
     public static void main(String[] args) {
@@ -34,12 +33,29 @@ public class kafe314 {
 
         Menu("Andi", true);
 
-        System.out.print("Masukkan nomor menu yang ingin anda pesan: ");
-        int pilihanMenu = sc.nextInt();
-        System.out.print("Masukkan jumlah item yang ingin dipesan: ");
-        int banyakItem = sc.nextInt();
+        int totalKeseluruhan = 0;
+        String lanjut;
 
-        int totalHarga = hitungTotalHarga14(pilihanMenu, banyakItem);
-        System.out.println("Total harga untuk pesanan anda: " + totalHarga);
+        do {
+            System.out.print("Masukkan nomor menu yang ingin anda pesan: ");
+            int pilihanMenu = sc.nextInt();
+
+            System.out.print("Masukkan jumlah item: ");
+            int banyakItem = sc.nextInt();
+
+           
+            int totalHarga = hitungTotalHarga14(pilihanMenu, banyakItem);
+
+          
+            totalKeseluruhan += totalHarga;
+
+            System.out.print("Apakah ingin memesan menu lain? (y/n): ");
+            lanjut = sc.next();
+
+        } while (lanjut.equalsIgnoreCase("y"));
+
+        System.out.println("============================");
+        System.out.println("Total keseluruhan pesanan: " + totalKeseluruhan);
+        System.out.println("============================");
     }
 }
